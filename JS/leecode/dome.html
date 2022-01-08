@@ -1,20 +1,26 @@
 <script>
-// 给定一个二进制数组， 计算其中最大连续 1 的个数。
-
-var findMaxConsecutiveOnes = function(nums) {
-    var b = 0
-    var c = 0
-    for (var i =0;i <= nums.length - 1;i++ ){
-        if(nums[i] == 1){
-            b++
-            if(b > c){
-                c = b
-            }
+var addTwoNumbers = function(l1, l2) {
+    var l3
+    if (l1.length <= l2.length){
+        l3 = l2.length
+        l1.length = l3
+    }else{
+        l3 = l1.length
+        l2.length = l3
+    };
+    var x = []
+    for (var i = 0;i < l3;i++){
+        var j =0
+        if(j +l1[i]+l2[i]>= 10){
+            j = 1
+            x[i]=(j+l1[i]+l2[i]) % 10
         }else{
-            b = 0
-        }            
-    }
-    return c
-};
+            j = 0
+            x[i]=(j+l1[i]+l2[i]) % 10
+        }
 
+    };
+      return x
+};
+console.log(addTwoNumbers(l1 = [9,9,9,9,9,9,9], l2 = [9,9,9,9]))
 </script>

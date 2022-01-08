@@ -1,0 +1,18 @@
+<script>
+// 输入
+// 共两行。
+// 第一行是两个实数Xa，Ya，即A的坐标。
+// 第二行是两个实数Xb，Yb，即B的坐标。
+// 输入中所有实数的绝对值均不超过10000。
+// 输出
+// 一个实数，即线段AB的长度，保留到小数点后3位。
+var xa = Number(prompt('xa'));
+var ya = Number(prompt('ya'));
+var xb = Number(prompt('xb'));
+var yb = Number(prompt('yb'));
+var xyLength = Math.sqrt(Math.abs(xa-xb)*Math.abs(xa-xb)+Math.abs(ya-yb)*Math.abs(ya-yb)).toFixed(3)
+console.log(xyLength)
+
+
+
+</script>

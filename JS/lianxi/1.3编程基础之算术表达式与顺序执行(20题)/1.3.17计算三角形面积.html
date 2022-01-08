@@ -1,0 +1,20 @@
+<script>
+// 平面上有一个三角形，它的三个顶点坐标分别为(x1, y1), (x2, y2), (x3, y3)，那么请问这个三角形的面积是多少。
+
+// 输入
+// 输入仅一行，包括6个单精度浮点数，分别对应x1, y1, x2, y2, x3, y3。
+// 输出
+// 输出也是一行，输出三角形的面积，精确到小数点后两位。
+var num = prompt('输入仅一行，包括6个单精度浮点数，分别对应x1, y1, x2, y2, x3, y3');
+num = num.split(' ')
+var a = Math.sqrt((num[3]-num[1])*(num[3]-num[1])+(num[2]-num[0])*(num[2]-num[0]))
+var b = Math.sqrt((num[5]-num[3])*(num[5]-num[3])+(num[4]-num[2])*(num[4]-num[2]))
+var c = Math.sqrt((num[5]-num[1])*(num[5]-num[1])+(num[4]-num[0])*(num[4]-num[0]))
+var p =(a + b + c) / 2
+var S = Math.sqrt(p*(p-a)*(p-b)*(p-c)).toFixed(2)
+
+console.log(S)
+
+
+
+</script>
