@@ -1,0 +1,20 @@
+<script>
+/*  描述
+输入三个整数,输出最大的数。
+
+输入
+输入为一行，包含三个整数，数与数之间以一个空格分开。
+输出
+输出一行，包含一个整数，即最大的整数。 */
+
+var num = prompt('')
+num = num.split(' ')
+if(num[0] > num[1] && num[0]>num[2]){
+    console.log(num[0])
+} else if(num[1] > num[0] && num[1]>num[2]){
+    console.log(num[1])
+}else{
+    console.log(num[2])
+}
+
+</script>

@@ -6,10 +6,8 @@
     
     给你一个长度为 n 的整数数组 candyType ，返回： Alice 在仅吃掉 n / 2 枚糖的情况下，可以吃到糖的最多种类数。
      */
-
     var distributeCandies = function (candyType) {
         var map = {}
-
         for (var i = 0; i < candyType.length; i++) {
             map[candyType[i]] = 1
         }
@@ -18,13 +16,11 @@
         for (var key in map) {
             kind++
         }
-
         if (kind < candyType.length / 2) {
             return kind
         } else {
             return candyType.length / 2
         }
     };
-
-    distributeCandies([6,6,6,6,6,6])
+    distributeCandies([6, 6, 6, 6, 6, 6])
 </script>

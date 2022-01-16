@@ -1,0 +1,22 @@
+<script>
+// Hercy 想要为购买第一辆车存钱。他 每天 都往力扣银行里存钱。
+
+// 最开始，他在周一的时候存入 1 块钱。从周二到周日，
+// 他每天都比前一天多存入 1 块钱。在接下来每一个周一，他都会比 前一个周一 多存入 1 块钱。
+
+// 给你 n ，请你返回在第 n 天结束的时候他在力扣银行总共存了多少块钱。
+    var totalMoney = function (n) {
+        var x = Math.floor(n / 7)
+        var y = n % 7
+        var money = 0
+        var temp = x + 1
+        if (x >= 1) { money = 28 * x + 7 * (x - 1) }
+        for (var i = y; i > 0; i--) {
+            money = money + temp
+            temp++
+        }
+        return money
+    };
+    debugger;totalMoney(26)
+
+</script>
