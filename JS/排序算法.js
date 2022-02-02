@@ -116,4 +116,4 @@ function qSort(ary, start = 0, end = ary.length -1) {
     return ary
 }  
 
-console.log(bubbleSort([3,1,4,1,5,9,2,6]))
+console.log(qSort([3,1,4,1,5,9,2,6]))
