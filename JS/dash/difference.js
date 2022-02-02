@@ -8,6 +8,13 @@
  */
 
 function difference(array, values) {
-    
-    
+    var temp = []
+    for (var i = 0; i < array.length; i++){
+        if (values.indexOf(array[i]) === -1){
+            temp.push(array[i])
+        }
+    }
+    return temp
 }
+
+console.log(difference([3, 2, 1], [4, 2]))
